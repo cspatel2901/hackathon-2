@@ -1,0 +1,204 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All products - Redstore </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+
+</head>
+<body>
+
+    <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <img src="https://rsanimesh.github.io/images/logo.png" width="150px">
+     </div>
+     <nav>
+        <ul id="menuItmes">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="acount.html">Account</a></li>
+        </ul>
+     </nav> 
+     <img src="https://icon-library.com/images/cart-icon-transparent/cart-icon-transparent-18.jpg" width="30px" height="30px" >  
+     <img src="https://cdn0.iconfinder.com/data/icons/rounded-basics/24/rounded__menu-512.png" class="menu-icon" onclick="menutoggle()"> 
+    </div>
+<!-----single products details----->
+<div class="small-container Single-products">
+    <div class="row">
+        <div class="c0l-2">
+           <img src="https://kingdomofwhite.com/cdn/shop/files/KOW53738copy_3000x.jpg?v=1697101768" width="180px">
+        </div>
+        <div class="c0l-2">
+            <P>Home / T-shirt</P>
+            <h1>White T-shirt by Cyber</h1>
+            <h4>$50.00</h4>
+            <select>
+                <option>Select size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add to cart</a>
+            <a href="{% url 'stream' %}" class="btn">Try on</a>
+            <a href="" class="btn">startButton</a>
+            <h3>Products Details <i class="fa fa-indent"></i></h3>
+            <br>
+            <p>Best T-shirt Ever desing by Bro With Pro</p>
+        </div>
+    </div>
+</div>
+<br>
+<!-----title----->
+<div class="small-container">
+    <div class="row" row-2>
+        <h2>Related Products</h2>
+        <p>View more</p>
+    </div>
+</div>
+<!-----products-->
+<div class="small-container">
+    
+        <div class="row">
+            <div class="col-4">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/printed_t-shirts_for_men_15_8_2022/definitely_not_yellow_t-shirt_for_men_base_15_6_2023_700x933.jpg" width="200px" height="200px" >
+                <h4>Fancy Tshirt</h4>
+                <div class="rating">
+                <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/8/tr:w-300,/a866838NK_BULLM00010478_2.jpg" width="200px" height="200px" >
+                <h4>Print Tshirt</h4>
+                <div class="rating">
+                <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRUku37uzs_OeofZr8D-ptiRR1CUU7dwpcQZHPlTMiz1e0V15f8YfkT_qBiV-s0HF38vckSmeIMPyg9bXVxe6TAhaI6VTESUdfZVLikW15GH8l5LSGSat-3tg&usqp=CAE " width="200px" height="200px" >
+                <h4>Plane Tshirt</h4>
+                <div class="rating">
+                <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTRljUzzsyXGT1jX6m2g9CGAwvfjx1XgqJu9_4y-AoIcn1CLky5l1oPphk-RPDhk5yCSUlqQtv-K0GVAvNiQh5ngbQHFOWsVsFGMGYFcux6PDNGUKQd_W4X&usqp=CAE " width="200px" height="200px" >
+                <h4>Print Shirt</h4>
+                <div class="rating">
+                <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Dwonload Our App</h3>
+                <p>Download app for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="https://www.logo.wine/a/logo/Google_Play/Google_Play-Logo.wine.svg" >
+                    <img src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo.jpg" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="https://rsanimesh.github.io/images/logo.png" >
+                <p>Power purpose is to sustainability make the pleasure and benefit of export accessible to many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+               <ul>
+                <li>coupons</li>
+                <li>Blog Post</li>
+                <li>Return policy</li>
+                <li>Join Affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+               <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>You Tube</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2024 - Cyber कवच</p>
+    </div>
+</div>
+<!--- js for toggle menu --->
+
+<script>
+    const video = document.getElementById('video');
+        const startButton = document.getElementById('startButton');
+        const stopButton = document.getElementById('stopButton');
+
+        startButton.addEventListener('click', () => {
+            startCamera();
+        });
+
+        stopButton.addEventListener('click', () => {
+            stopCamera();
+        });
+
+        async function startCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = stream;
+            } catch (err) {
+                console.error('Error accessing camera:', err);
+            }
+        }
+
+        function stopCamera() {
+            const stream = video.srcObject;
+            const tracks = stream.getTracks();
+
+            tracks.forEach(track => {
+                track.stop();
+            });
+
+            video.srcObject = null;
+        }
+
+</script>
+   <script>
+    var menuItmes = document.getElementById("menuItmes");
+      
+    menuItems.style.maxHeight = "0px";
+
+    function  menutoggle(){
+        if(menuItmes.style.maxHeight == "0px")
+        {
+            menuItmes.style.maxHeight= "200px";
+        }
+        else
+        {
+            menuItmes.style.maxHeight= "0px";
+         }
+    }
+
+   </script> 
+
+</body>
+</html>
